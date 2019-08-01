@@ -1,7 +1,7 @@
 {
   "name": "@aimlabs/unicorn",
   "description": "AIMLABS User Interface Library based on Vue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Suresh Reddy Guntaka <sureshreddy.guntaka@gmail.com>",
   "homepage": "https://aimlabs.github.com/unicorn",
   "license": "Apache-2.0",
@@ -13,29 +13,34 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name @aimlabs/unicorn ./src/index.js",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
+    "chalk": "^2.4.2",
+    "core-js": "^3.1.4",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
-    "@vue/cli-plugin-eslint": "^3.9.0",
-    "@vue/cli-plugin-pwa": "^3.9.0",
-    "@vue/cli-plugin-unit-jest": "^3.9.0",
-    "@vue/cli-service": "^3.9.0",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-syntax-export-default-from": "^7.2.0",
+    "@vue/cli-plugin-babel": "^4.0.0-beta.2",
+    "@vue/cli-plugin-e2e-cypress": "^4.0.0-beta.2",
+    "@vue/cli-plugin-eslint": "^4.0.0-beta.2",
+    "@vue/cli-plugin-pwa": "^4.0.0-beta.2",
+    "@vue/cli-plugin-unit-jest": "^4.0.0-beta.2",
+    "@vue/cli-service": "^4.0.0-beta.2",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
-    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
@@ -44,13 +49,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "browserslist": [
-    "safari >= 9",
-    "ie >= 11",
-    "edge >= 14",
-    "chrome >= 41",
-    "firefox >= 44",
-    "Firefox ESR"
-  ]
+  }
 }
