@@ -1,7 +1,7 @@
 {
   "name": "@aimlabs/unicorn",
   "description": "AIMLABS User Interface Library based on Vue",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Suresh Reddy Guntaka <sureshreddy.guntaka@gmail.com>",
   "homepage": "https://aimlabs.github.com/unicorn",
   "license": "Apache-2.0",
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "https://github.com/aimlabs/unicorn"
   },
+  "keywords": "aimlabs unicorn userinterface vuejs vuejs-ui ui",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
