@@ -1,7 +1,15 @@
 {
-  "name": "unicorn",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@aimlabs/unicorn",
+  "description": "AIMLABS User Interface Library based on Vue",
+  "version": "0.1.1",
+  "author": "Suresh Reddy Guntaka <sureshreddy.guntaka@gmail.com>",
+  "homepage": "https://aimlabs.github.com/unicorn",
+  "license": "Apache-2.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aimlabs/unicorn"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -33,5 +41,16 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "browserslist": [
+    "safari >= 9",
+    "ie >= 11",
+    "edge >= 14",
+    "chrome >= 41",
+    "firefox >= 44",
+    "Firefox ESR"
+  ]
 }
